@@ -1,0 +1,5 @@
+com\example\sample\SampleApplication.class
+com\example\sample\service\formservice.class
+com\example\sample\repository\formrepo.class
+com\example\sample\controller\formcontroller.class
+com\example\sample\domain\form.class

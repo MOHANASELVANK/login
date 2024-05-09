@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/comp.css">
+    <style>
+        .card {
+            background-color: rgb(106, 208, 205);
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        
+        .container {
+            padding: 20px;
+        }
+        .role {
+            font-weight: bold;
+            color: white;
+            margin-bottom: 5px;
+        }
+        .salary {
+            color: white;
+            margin-bottom: 5px;
+        }
+        .phno {
+            color: white;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div th:each="form : ${forms}">
+        <div class="card">
+            <div class="container">
+                <h4 class="Name" th:text="${form.Username}"></h4>
+                <p class="Pass" th:text="${form.Password}"></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

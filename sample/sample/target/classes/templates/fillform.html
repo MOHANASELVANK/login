@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>New form</title>
+    </head>
+
+    <body>
+        <h2>Fill up this form</h2>
+        <form th:action="@{/getin}" method="post">
+            <label for="username">Username : </label>
+            <input id="user" type="text" name="Username"><br><br>
+            <label for="password">Password : </label>
+            <input id="pass" type="password" name="password"><br><br>
+            <input type="submit" id="submission">
+        </form>
+    </body>
+</html>
